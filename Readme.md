@@ -1,4 +1,4 @@
-# styleguidist-site
+# React Styleguidist site
 
 Powered by [Tâmia](http://tamiadev.github.io/tamia/) and [Fledermaus](https://github.com/sapegin/fledermaus).
 
