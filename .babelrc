@@ -1,0 +1,5 @@
+{
+  "presets": [
+    "./node_modules/tamia-build/config/babel-preset"
+  ]
+}

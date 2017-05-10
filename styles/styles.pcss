@@ -1,0 +1,39 @@
+@import "~tamia/lib/styles/index.pcss";
+@import "~tamia/lib/styles/classes/code.pcss";
+@import "~tamia/lib/styles/classes/hljs.pcss";
+
+:root {
+	--infoColor: #bbb;
+	--infoBackground: #f5f5f5;
+	--warningColor: #ea5e5e;
+	--warningBackground: #fff5f5;
+}
+
+body {
+	padding: 0 0 var(--spacer0);
+	line-height: 1.4;
+	hyphens: none;
+}
+
+.text ul,
+.text ol {
+	padding-left: 1.15em;
+}
+
+.text-note,
+.text-warning {
+	margin-top: var(--spacer3);
+	margin-bottom: var(--spacer4);
+	padding: var(--spacer2);
+	border-left: 4px solid;
+}
+
+.text-note {
+	border-color: var(--infoColor);
+	background-color: var(--infoBackground);
+}
+
+.text-warning {
+	border-color: var(--warningColor);
+	background-color: var(--warningBackground);
+}

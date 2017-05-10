@@ -1,0 +1,29 @@
+.button {
+	display: inline-block;
+	padding: var(--spacer1-5) var(--spacer3);
+	text-decoration: none;
+	font-size: var(--bigFontSize);
+	color: var(--linkColor);
+	border: 1px solid currentColor;
+	border-radius: 3px;
+}
+
+.button:--link-hovers {
+	color: var(--hoverColor);
+}
+
+.button + .button {
+	margin-left: var(--spacer2);
+}
+
+.isPrimary {
+	color: var(--bgColor);
+	background: var(--linkColor);
+	border-color: var(--linkColor);
+}
+
+.isPrimary:--link-hovers {
+	color: var(--bgColor);
+	background: var(--hoverColor);
+	border-color: var(--hoverColor);
+}

@@ -1,0 +1,52 @@
+sourceFolder: source
+docsFolder: docs
+sourceTypes:
+  - md
+templatesFolder: templates
+assetsFolder: public
+publicFolder: public
+lang: en
+url: 'http://react-styleguidist.js.org/'
+title: React Styleguidist
+description: Style guide generator & component workbench for React
+menu:
+  -
+    caption: Documentation
+    href: /docs/getting-started.html
+  -
+    caption: GitHub
+    href: https://github.com/styleguidist/react-styleguidist
+  -
+    caption: Gitter
+    href: https://gitter.im/styleguidist/styleguidist
+docs:
+  -
+    caption: Essentials
+    pages:
+      -
+        caption: Get started
+        href: /docs/getting-started.html
+      -
+        caption: Documenting components
+        href: /docs/documenting.html
+      -
+        caption: Locating components
+        href: /docs/components.html
+      -
+        caption: Configuring webpack
+        href: /docs/webpack.html
+      -
+        caption: Cookbook
+        href: /docs/cookbook.html
+  -
+    caption: Advanced
+    pages:
+      -
+        caption: Configuration
+        href: /docs/configuration.html
+      -
+        caption: CLI commands and options
+        href: /docs/cli.html
+      -
+        caption: Node API
+        href: /docs/api.html

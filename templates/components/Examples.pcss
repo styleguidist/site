@@ -1,0 +1,15 @@
+.item {
+	margin-bottom: var(--spacer2);
+}
+
+.image {
+	@apply --responsive-image;
+
+	display: block;
+	margin-bottom: var(--spacer0);
+	border: 1px solid var(--lightColor);
+}
+
+.link:--link-hovers .image {
+	border-color: var(--hoverColor);
+}
