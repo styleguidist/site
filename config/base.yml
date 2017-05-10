@@ -6,9 +6,10 @@ templatesFolder: templates
 assetsFolder: public
 publicFolder: public
 lang: en
-url: 'http://react-styleguidist.js.org/'
+url: 'https://react-styleguidist.js.org/'
 title: React Styleguidist
 description: Style guide generator & component workbench for React
+twitter: styleguidist
 menu:
   -
     caption: Documentation
@@ -16,6 +17,9 @@ menu:
   -
     caption: GitHub
     href: https://github.com/styleguidist/react-styleguidist
+  -
+    caption: Twitter
+    href: https://twitter.com/styleguidist
   -
     caption: Gitter
     href: https://gitter.im/styleguidist/styleguidist

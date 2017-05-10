@@ -23,7 +23,7 @@ export default function(props, children, { title, pageTitle, option }) {
 				<meta name="twitter:card" content="summary" />
 				<meta name="twitter:title" content={option('title')} />
 				<meta name="twitter:description" content={option('description')} />
-				<meta name="twitter:creator" content="@sapegin" />
+				<meta name="twitter:creator" content={`@${option('twitter')}`} />
 				<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,400i,700" rel="stylesheet" />
 				<Style />
 			</head>
