@@ -1,32 +1,31 @@
 {
   "name": "styleguidist-site",
   "version": "0.0.0",
-  "description": "",
+  "private": true,
   "author": {
     "name": "Artem Sapegin",
     "url": "http://sapegin.me"
   },
-  "homepage": "https://github.com/sapegin/styleguidist-site",
-  "repository": "sapegin/styleguidist-site",
+  "homepage": "https://github.com/styleguidist/site",
+  "repository": "styleguidist/site",
   "license": "See license in <Readme.md>",
   "engines": {
-    "node": ">=7"
+    "node": ">=6"
   },
-  "main": "index.js",
-  "files": [
-    "index.js"
-  ],
   "scripts": {
     "pretest": "npm run lint && npm run lint:css",
     "lint:css": "stylelint '**/*.pcss'",
     "lint:js": "eslint . --fix --ext .js,.jsx",
     "start": "tamia server & npm run build:watch",
     "test": "npm run lint:css && npm run lint:js",
+    "deploy": "npm run bundl && npm run build",
     "bundle": "tamia bundle",
     "build": "BABEL_DISABLE_CACHE=1 babel-node src",
     "build:watch": "chokidar source 'templates/**/*.jsx' -c 'BABEL_DISABLE_CACHE=1 babel-node src'"
   },
-  "keywords": [],
+  "dependencies": {
+    "tamia": "3.0.0-aplha.11"
+  },
   "devDependencies": {
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
@@ -41,9 +40,5 @@
     "stylelint-config-standard": "^16.0.0",
     "tamia-build": "^1.2.2",
     "unist-util-visit": "^1.1.1"
-  },
-  "private": true,
-  "dependencies": {
-    "tamia": "3.0.0-aplha.10"
   }
 }
