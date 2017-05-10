@@ -1,6 +1,6 @@
 import visit from 'unist-util-visit';
 import GithubSlugger from 'github-slugger';
-import getDocUrL from './getDocUrL';
+import getDocUrl from './getDocUrl';
 
 const slugger = new GithubSlugger();
 
@@ -24,7 +24,7 @@ export function heading() {
 export function link() {
 	return ast => visit(ast, 'link', node => {
 		if (node.url.match(/^\w+\.md/)) {
-			node.url = `/${getDocUrL(node.url)}`;
+			node.url = `/${getDocUrl(node.url)}`;
 		}
 	});
 }
