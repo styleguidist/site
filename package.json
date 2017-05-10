@@ -36,6 +36,7 @@
     "eslint-plugin-react": "^6.10.3",
     "fledermaus": "^6.0.0",
     "github-slugger": "^1.1.1",
+    "lodash": "^4.17.4",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
     "tamia-build": "^1.2.6",
