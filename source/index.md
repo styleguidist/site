@@ -29,7 +29,7 @@ smallFeatures:
 examples:
   -
     caption: Example style guide
-    href: http://react-styleguidist.js.org/
+    href: /examples/basic/
     sourceHref: https://github.com/styleguidist/react-styleguidist/blob/master/examples/basic
     image: /images/example1.png
   -
