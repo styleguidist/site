@@ -26,6 +26,7 @@
     "build:watch": "chokidar source 'templates/**/*.jsx' -c 'BABEL_DISABLE_CACHE=1 babel-node src'"
   },
   "dependencies": {
+    "highlight.js": "^9.11.0",
     "tamia": "3.0.0-aplha.11"
   },
   "devDependencies": {
