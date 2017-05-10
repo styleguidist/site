@@ -6,15 +6,18 @@ import {
 	savePages,
 	createMarkdownRenderer,
 	createTemplateRenderer,
-	helpers,
+	helpers as defaultHelpers,
 } from 'fledermaus';
 import getDocUrl from './util/getDocUrl';
+import * as customHelpers from './util/helpers';
 import * as remarkPlugins from './util/remark';
 
 start('Building site...');
 
 const config = loadConfig('config');
 const options = config.base;
+
+const helpers = { ...defaultHelpers, ...customHelpers };
 
 const renderMarkdown = createMarkdownRenderer({
 	plugins: Object.values(remarkPlugins),
