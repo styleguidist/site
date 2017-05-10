@@ -21,7 +21,7 @@ if [ "$WEBHOOK_TITLE" == "react-styleguidist-commit" ]; then
 
 	# Copy to the public folder
 	mkdir -p ../public/examples/basic
-	cp -R examples/basic/styleguide/* ../../public/examples/basic/
+	cp -R examples/basic/styleguide/* ../public/examples/basic/
 
 	cd -
 fi
