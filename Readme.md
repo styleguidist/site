@@ -1,4 +1,4 @@
-# React Styleguidist site
+# [React Styleguidist site](http://react-styleguidist.js.org)
 
 Powered by [Tâmia](http://tamiadev.github.io/tamia/) and [Fledermaus](https://github.com/sapegin/fledermaus).
 
@@ -7,9 +7,10 @@ Powered by [Tâmia](http://tamiadev.github.io/tamia/) and [Fledermaus](https://g
 First clone the repo, install dependencies and build the site:
 
 ```bash
-git clone https://github.com/sapegin/sapegin.me.git
-cd sapegin.me
+git clone https://github.com/styleguidist/site.git react-styleguidist.js.org
+cd react-styleguidist.js.org
 npm install
+npm run sync
 npm run bundle
 npm run build
 ```

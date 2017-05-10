@@ -2,26 +2,36 @@
 
 # Deploy to Netlify
 
-STYLEGUIDIST_TAR_GZ="https://codeload.github.com/styleguidist/react-styleguidist/tar.gz/master"
+REPO_TAR_GZ="https://codeload.github.com/styleguidist/react-styleguidist/tar.gz/master"
+REPO_DIR="react-styleguidist-master"
+
+# Download and unpack master branch
+echo
+echo "Downloading react-styleguidist..."
+curl "$REPO_TAR_GZ" | tar xz
+
+# Build a basic example
+echo
+echo "Building a basic example..."
+cd $REPO_DIR
+yarn
+yarn run build
+cd -
+
+# Copy to the public folder
+echo
+echo "Copying a basic example..."
+mkdir -p public/examples/basic
+cp -R $REPO_DIR/examples/basic/styleguide/* public/examples/basic
+
+# Update docs
+echo
+echo "Copying docs..."
+mkdir -p docs
+cp $REPO_DIR/docs/* docs
 
 # Build the site
+echo
+echo "Building the site..."
 yarn run build
 yarn run bundle
-
-# A new commit in Styleguidist repo?
-if [ "$WEBHOOK_TITLE" == "react-styleguidist-commit" ]; then
-	# Download and unpack master branch
-	curl "$STYLEGUIDIST_TAR_GZ" | tar xz
-
-	cd "react-styleguidist-master"
-	yarn
-
-	# Build a basic example
-	yarn run build
-
-	# Copy to the public folder
-	mkdir -p ../public/examples/basic
-	cp -R examples/basic/styleguide/* ../public/examples/basic/
-
-	cd -
-fi
