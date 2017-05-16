@@ -1,31 +1,37 @@
 ---
 layout: Index
 title: 'React Stylegudist'
-pageTitle: 'React Stylegudist: style guide generator & component workbench for React'
-subtitle: Style guide generator & component workbench
+pageTitle: 'React Stylegudist: isolated React component development environment with a living style guide'
+subtitle: Isolated React component development environment with a living style guide
 features:
   -
+    caption: Development environment 
+    body:
+      - Create new components without distractions
+      - Test all variants of a component at the same time
+      - See changes right after you save a file
+    images:
+      - /images/workbench.png
+  -
     caption: Style guide
-    text: All components on a single page
+    body:
+      - See all components in one place
+      - Explore components in an interactive playground
+      - Share components with your team, including designers and developers
     images:
       - /images/styleguide1.png
       - /images/styleguide2.png
   -
     caption: Documentation
-    text: For each component written in Markdown with live examples. Props and public methods
+    body:
+      - Learn how to use components, their props and public methods
+      - Document your component using Markdown with live examples
     images:
       - /images/docs.png
-  -
-    caption: Development workbench
-    text: Environment for creating new components in isolation
-    images:
-      - /images/workbench.png
 smallFeatures:
-  - Hot reloads everything
   - Works with Create React App
   - Supports ES6, Flow and TypeScript
-  - Can use your project’s webpack configuration
-  - Customizable design
+  - Can reuse your project’s webpack configuration
 examples:
   -
     caption: Example style guide

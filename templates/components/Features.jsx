@@ -6,12 +6,14 @@ import s from './Features.pcss';
 export default function Features({ features }, children, { typo, typoTitle }) {
 	return (
 		<section>
-			{features.map(({ caption, text, images }) => (
+			{features.map(({ caption, body, images }) => (
 				<Block bottom={8} class={s.item}>
 					<Layout>
 						<Layout sm={1 / 3} class={s.body}>
 							<Gamma class={s.heading}>{typoTitle(caption)}</Gamma>
-							<div>{typo(text)}</div>
+							<ul>
+								{body.map(text => <li class={s.listItem}>{typo(text)}</li>)}
+							</ul>
 						</Layout>
 						{images.map(image => ( // 1 or 2 images — 2/3 or 1/3 each
 							<Layout sm={(3 - images.length) / 3}>
