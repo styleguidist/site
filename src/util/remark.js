@@ -5,16 +5,31 @@ import getDocUrl from './getDocUrl';
 const slugger = new GithubSlugger();
 
 /*
- * Add IDs to headings
+ * Add IDs and links to headings
  */
 export function heading() {
 	return ast => visit(ast, 'heading', node => {
 		const text = node.children.map(child => child.value).join('');
+		const slug = slugger.slug(text);
+
+		// Add ID
 		node.data = {
 			hProperties: {
-				id: slugger.slug(text),
+				id: slug,
 			},
 		};
+
+		if (node.depth === 1) {
+			return;
+		}
+
+		// Add a link
+		const { children } = node;
+		node.children = [{
+			type: 'link',
+			url: `#${slug}`,
+			children,
+		}];
 	});
 }
 
