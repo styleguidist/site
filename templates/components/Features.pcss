@@ -2,12 +2,21 @@
 	margin-bottom: var(--spacer2);
 }
 
+.intro {
+	margin-bottom: var(--spacer2);
+	font-weight: bold;
+}
+
 .body {
 	margin-bottom: var(--spacer2);
 }
 
 .item:nth-child(2n) .body {
 	order: 2;
+}
+
+.imageContainer {
+	position: relative;
 }
 
 .image {
@@ -18,4 +27,25 @@
 
 .listItem {
 	margin-bottom: var(--spacer1);
+}
+
+/* Customizataions */
+
+:global(#playground) .imageContainer::after {
+	content: "";
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	margin: 1px; /* To match the image border */
+	background-image: url(/images/docs2.png);
+	background-size: 100% 100%;
+	animation: image 5s infinite steps(2);
+}
+
+@keyframes image {
+	100% {
+		background-image: none;
+	}
 }
