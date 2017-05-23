@@ -1,7 +1,7 @@
 ---
 layout: Index
-title: 'React Stylegudist'
-pageTitle: 'React Stylegudist: isolated React component development environment with a living style guide'
+title: 'React Styleguidist'
+pageTitle: 'React Styleguidist: isolated React component development environment with a living style guide'
 subtitle: Isolated React component development environment with a living style guide
 features:
   -
