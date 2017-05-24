@@ -54,3 +54,6 @@ docs:
       -
         caption: Node API
         href: /docs/api.html
+      -
+        caption: Developer guide
+        href: /docs/development.html
