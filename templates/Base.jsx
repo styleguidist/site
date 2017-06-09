@@ -5,6 +5,7 @@ import Header from './components/Header';
 import Footer from './components/Footer';
 import Main from 'tamia/lib/components/Main';
 import '../styles/styles.pcss';
+import '../styles/docsearch.pcss';
 
 export default function(props, children, { title, getPageTitle, getMetaTags, option }) {
 	return (
