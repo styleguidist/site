@@ -42,7 +42,7 @@
     "lodash": "^4.17.4",
     "stylelint": "^7.10.1",
     "stylelint-config-standard": "^16.0.0",
-    "tamia-build": "^1.2.6",
+    "tamia-build": "^1.2.7",
     "unist-util-visit": "^1.1.1"
   }
 }
