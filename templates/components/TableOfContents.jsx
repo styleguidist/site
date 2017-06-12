@@ -2,7 +2,7 @@ import { Epsilon } from 'tamia/lib/components/Text';
 import Link from 'tamia/lib/components/Link';
 import s from './TableOfContents.pcss';
 
-export default function TableOfContents({ currentUrl, docs }, children, { typo }) {
+export default function TableOfContents({ currentUrl, docs }) {
 	return (
 		<ul>
 			{docs.map(({ caption, pages }) => (

@@ -13,9 +13,9 @@
     "node": ">=6"
   },
   "scripts": {
-    "pretest": "npm run lint && npm run lint:css",
-    "lint:css": "stylelint '**/*.pcss'",
+    "pretest": "npm run lint:js && npm run lint:css",
     "lint:js": "eslint . --fix --ext .js,.jsx",
+    "lint:css": "stylelint --fix '**/*.pcss'",
     "start": "tamia server & npm run build:watch",
     "test": "npm run lint:css && npm run lint:js",
     "sync": "./scripts/sync.sh",
@@ -40,9 +40,9 @@
     "fledermaus": "^6.0.0",
     "github-slugger": "^1.1.1",
     "lodash": "^4.17.4",
-    "stylelint": "^7.10.1",
+    "stylelint": "^7.11.0",
     "stylelint-config-standard": "^16.0.0",
     "tamia-build": "^1.2.7",
-    "unist-util-visit": "^1.1.1"
+    "unist-util-visit": "^1.1.3"
   }
 }
