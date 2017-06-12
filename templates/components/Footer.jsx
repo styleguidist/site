@@ -25,7 +25,7 @@ export default function Footer() {
 		          apiKey: '0bd0dc976499f3a333c9d26416b4fee1',
 							indexName: 'react_styleguidist',
 							inputSelector: '#searchbox',
-		          debug: false
+		          debug: true
 		        })
 		    `}
 		></script>
