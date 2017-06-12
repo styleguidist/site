@@ -8,7 +8,7 @@ publicFolder: public
 lang: en
 url: 'https://react-styleguidist.js.org/'
 title: React Styleguidist
-description: Style guide generator & component workbench for React
+description: Isolated React component development environment with a living style guide
 twitter: styleguidist
 menu:
   -
