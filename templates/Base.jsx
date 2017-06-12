@@ -13,7 +13,6 @@ export default function(props, children, { title, getPageTitle, getMetaTags, opt
 				<meta charset="utf-8" />
 				<title>{getPageTitle({ title })}</title>
       	<Style />
-      	<link rel="stylesheet" href="styles/docsearch.pcss" />
 				<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,400i,700" rel="stylesheet" />
 				{getMetaTags()}
 			</head>
