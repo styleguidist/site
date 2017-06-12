@@ -12,7 +12,7 @@ description: Style guide generator & component workbench for React
 twitter: styleguidist
 menu:
   -
-    caption: Documentation
+    caption: Docs
     href: /docs/getting-started.html
   -
     caption: GitHub

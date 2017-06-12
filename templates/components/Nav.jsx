@@ -4,7 +4,7 @@ import s from './Nav.pcss';
 
 export default function Header({ items }) {
 	return (
-		<nav class={s.navigationElement}>
+		<nav>
 			<SearchBox />
 			<ul class={s.list}>
 				{items.map(({ caption, href }) => (

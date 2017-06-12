@@ -1,117 +1,58 @@
-.searchboxHolder {
+.holder {
 	display: inline-block;
-	padding: 0 1em;
+	margin-right: var(--spacer3);
 	position: relative;
 }
 
-.searchboxIcon {
+.icon {
 	position: absolute;
-	right: 0;
-	z-index: 10;
-	width: 18px;
-	height: 18px;
-	margin: 0.2em 1.5em;
+	top: 50%;
+	right: 12px;
+	margin-top: -9px;
 	cursor: pointer;
+	z-index: 10;
 }
 
-.searchboxIconPath {
-	fill: #fff;
+.iconPath {
+	fill: rgba(255, 255, 255, 0.75);
 }
 
-.searchboxElement {
-	padding: 4px 8px;
-	border-radius: 4px;
-	-webkit-appearance: none !important;
-	-moz-appearance: none !important;
-	appearance: none !important;
+.input {
+	display: block;
+	padding: var(--spacer0) var(--spacer4) var(--spacer0) var(--spacer1);
+	border-radius: 2px;
 	border: none;
-	background: rgba(255, 255, 255, 0.5);
-	color: #fff;
-	margin-top: -3px;
-	-webkit-transition: width 0.2s ease;
-	transition: width 0.2s ease;
-	will-change: width;
-	width: 168px;
-	-webkit-box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.9);
-	box-shadow: inset 0 0 0 rgba(0, 0, 0, 0.9);
+	color: var(--bgColor);
+	background-color: rgba(255, 255, 255, 0.25);
+	will-change: width, background-color;
+	transition: width 0.15s ease-out;
+
+	/* Algolia wraps input with span so 100% won’t work */
+	width: calc(100vw - var(--spacer4));
+
+	/* Algolia sets vertical-align: top, so reset with !important */
+	vertical-align: baseline !important;
 }
 
-.searchboxElement:focus,
-.searchboxElement:active {
+.input:focus,
+.input:active {
 	outline: none;
-	width: 260px;
+	background-color: rgba(255, 255, 255, 0.5);
 }
 
-.searchboxElement:focus,
-.searchboxElement:active {
-	outline: none;
-	width: 260px;
-	border-radius: 4px;
+.input::placeholder {
+	color: rgba(255, 255, 255, 0.75);
 }
 
-.searchboxElement::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.searchboxElement:-moz-placeholder {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.searchboxElement::-moz-placeholder {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-.searchboxElement:-ms-input-placeholder {
-	color: rgba(255, 255, 255, 0.8);
-}
-
-@media (max-width: 768px) {
-	.searchboxElement {
-		width: 30px;
-	}
-
-	.searchboxElement:focus,
-	.searchboxElement:active {
-		outline: none;
-		width: 120px;
-	}
-
-	.searchboxElement::-webkit-input-placeholder {
-		color: transparent;
-	}
-
-	.searchboxElement:-moz-placeholder {
-		color: transparent;
-	}
-
-	.searchboxElement::-moz-placeholder {
-		color: transparent;
-	}
-
-	.searchboxElement:-ms-input-placeholder {
-		color: transparent;
+@media (--medium) {
+	.input {
+		width: 10em;
 	}
 }
 
-@media (max-width: 640px) {
-	.searchboxHolder {
-		padding: 0;
-		margin-right: 1em;
-	}
-
-	.searchboxElement:focus,
-	.searchboxElement:active {
-		width: 100%;
-		background: rgba(255, 255, 255, 0.5);
-	}
-
-	.searchboxElement:not(.searchboxElement:focus) {
-		background: transparent;
-		color: transparent;
-	}
-
-	.searchboxIcon {
-		padding: 0;
-		margin: 0.2em 0.3em;
+@media (--large) {
+	.input:focus,
+	.input:active {
+		width: 20em;
 	}
 }
