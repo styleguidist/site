@@ -19,10 +19,6 @@ export default function Footer() {
           Site sources
         </Link>
       </Container>
-      <link
-        rel="stylesheet"
-        href="//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"
-      />
       <script
 		    src="//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js" onload={`
 		        javascript:docsearch({
