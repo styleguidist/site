@@ -2,6 +2,10 @@
 	text-align: center;
 }
 
+.logo {
+	margin-bottom: var(--spacer2);
+}
+
 .logo svg {
 	width: 300px;
 	height: auto;
@@ -13,12 +17,23 @@
 }
 
 .title {
-	margin-bottom: var(--spacer0);
-	font-size: var(--hugeFontSize);
+	margin-bottom: var(--spacer2);
+	font-size: var(--headerAlphaSize);
+	line-height: 1.1;
 	font-weight: normal;
 }
 
 .subtitle {
-	font-size: var(--headerBetaSize);
+	font-size: var(--headerGammaSize);
 	font-weight: normal;
+}
+
+@media (--medium) {
+	.title {
+		font-size: var(--hugeFontSize);
+	}
+
+	.subtitle {
+		font-size: var(--headerBetaSize);
+	}
 }
