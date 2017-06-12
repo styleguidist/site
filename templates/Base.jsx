@@ -13,10 +13,6 @@ export default function(props, children, { title, getPageTitle, getMetaTags, opt
 			<head>
 				<meta charset="utf-8" />
 				<title>{getPageTitle({ title })}</title>
-	      <link
-	        rel="stylesheet"
-	        href="//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css"
-	      />
       	<Style />
 				<link href="https://fonts.googleapis.com/css?family=Bree+Serif|Open+Sans:400,400i,700" rel="stylesheet" />
 				{getMetaTags()}
