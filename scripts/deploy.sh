@@ -14,8 +14,8 @@ curl "$REPO_TAR_GZ" | tar xz
 echo
 echo "Building a basic example..."
 cd $REPO_DIR
-yarn
-yarn run build
+npm
+npm run build
 cd -
 
 # Copy to the public folder
@@ -33,5 +33,5 @@ cp $REPO_DIR/docs/* docs
 # Build the site
 echo
 echo "Building the site..."
-yarn run build
-yarn run bundle
+npm run build
+npm run bundle
