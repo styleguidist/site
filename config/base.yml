@@ -1,5 +1,5 @@
 sourceFolder: source
-docsFolder: docs
+docsFolder: react-styleguidist-master/docs
 sourceTypes:
   - md
 templatesFolder: templates

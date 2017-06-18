@@ -24,12 +24,6 @@ echo "Copying a basic example..."
 mkdir -p public/examples/basic
 cp -R $REPO_DIR/examples/basic/styleguide/* public/examples/basic
 
-# Update docs
-echo
-echo "Copying docs..."
-mkdir -p docs
-cp $REPO_DIR/docs/* docs
-
 # Build the site
 echo
 echo "Building the site..."
