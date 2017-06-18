@@ -2,7 +2,6 @@ import Container from 'tamia/lib/components/Container';
 import Link from 'tamia/lib/components/Link';
 import s from './Footer.pcss';
 
-
 export default function Footer() {
 	return (
 		<div>
