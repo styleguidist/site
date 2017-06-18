@@ -5,22 +5,18 @@ import s from './TableOfContents.pcss';
 export default function TableOfContents({ currentUrl, docs }) {
 	return (
 		<ul>
-			{docs.map(({ caption, pages }) => (
+			{docs.map(({ caption, pages }) =>
 				<li class={s.section}>
 					<Epsilon>{caption}</Epsilon>
 					<ul>
-						{pages.map(({ caption, href }) => (
+						{pages.map(({ caption, href }) =>
 							<li class={s.page}>
-								{href === currentUrl ? (
-									caption
-								) : (
-									<Link class={s.link} href={href}>{caption}</Link>
-								)}
+								{href === currentUrl ? caption : <Link class={s.link} href={href}>{caption}</Link>}
 							</li>
-						))}
+						)}
 					</ul>
 				</li>
-			))}
+			)}
 		</ul>
 	);
 }

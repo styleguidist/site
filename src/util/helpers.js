@@ -1,8 +1,4 @@
-import {
-	og,
-	meta,
-	getFirstParagraph,
-} from 'fledermaus/lib/util';
+import { og, meta, getFirstParagraph } from 'fledermaus/lib/util';
 
 /* eslint-disable no-invalid-this */
 

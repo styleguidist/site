@@ -26,12 +26,13 @@ const renderTemplate = createTemplateRenderer({
 	root: options.templatesFolder,
 });
 
-const loadFrom = (dir, extras = {}) => loadSourceFiles(dir, options.sourceTypes, {
-	renderers: {
-		md: renderMarkdown,
-	},
-	...extras,
-});
+const loadFrom = (dir, extras = {}) =>
+	loadSourceFiles(dir, options.sourceTypes, {
+		renderers: {
+			md: renderMarkdown,
+		},
+		...extras,
+	});
 
 const documents = loadFrom(options.sourceFolder);
 
