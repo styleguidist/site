@@ -30,6 +30,7 @@
     "tamia": "^3.0.0-aplha.12"
   },
   "devDependencies": {
+    "babel-code-frame": "^6.22.0",
     "babel-eslint": "^7.2.3",
     "babel-register": "^6.24.1",
     "chalk": "^1.1.3",
