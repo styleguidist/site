@@ -15,13 +15,12 @@ export default function Footer() {
 				<Link href="https://github.com/styleguidist/site">Site sources</Link>
 			</Container>
 			<script
-				src="//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"
+				src="https://cdn.jsdelivr.net/docsearch.js/2/docsearch.min.js"
 				onload={`
 					javascript:docsearch({
 						apiKey: '0bd0dc976499f3a333c9d26416b4fee1',
 						indexName: 'react_styleguidist',
-						inputSelector: '#searchbox',
-						debug: true
+						inputSelector: '#searchbox'
 			        })
 			    `}
 			></script>
