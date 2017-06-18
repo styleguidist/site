@@ -12,3 +12,4 @@ Thumbs.db
 /public/examples/
 /react-styleguidist-master
 /docs
+.eslintcache
