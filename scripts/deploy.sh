@@ -6,8 +6,8 @@ REPO_TAR_GZ="https://codeload.github.com/styleguidist/react-styleguidist/tar.gz/
 REPO_DIR="react-styleguidist-master"
 EXAMPLE_DIR="$REPO_DIR/examples/basic"
 
-node -v
-npm -v
+echo "Node $(node -v)"
+echo "npm $(npm -v)"
 
 # Download and unpack master branch
 echo
