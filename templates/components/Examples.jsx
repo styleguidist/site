@@ -7,7 +7,7 @@ import s from './Examples.pcss';
 export default function Examples({ examples }, children, { typo }) {
 	return (
 		<Block bottom={6}>
-			<Beta>See it in acton</Beta>
+			<Beta>See it in action</Beta>
 			<Layout component="ul">
 				{examples.map(({ caption, href, image }) => (
 					<Layout component="li" sm={1 / 2} md={1 / 4} class={s.item}>
