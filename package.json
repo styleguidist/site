@@ -22,18 +22,17 @@
     "deploy": "./scripts/deploy.sh",
     "bundle": "tamia bundle",
     "prebuild": "mkdir -p public/build && touch public/build/styles.css",
-    "build": "node src",
-    "build:watch": "chokidar source 'templates/**/*.jsx' -c 'node src'"
+    "build": "BABEL_DISABLE_CACHE=1 babel-node src",
+    "build:watch": "chokidar source 'templates/**/*.jsx' -c 'BABEL_DISABLE_CACHE=1 babel-node src'"
   },
   "dependencies": {
     "highlight.js": "^9.12.0",
-    "tamia": "^3.0.0-aplha.12"
+    "tamia": "^3.0.0-aplha.13"
   },
   "devDependencies": {
-    "babel-code-frame": "^6.22.0",
+    "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-register": "^6.24.1",
-    "chalk": "^1.1.3",
     "chokidar-cli": "^1.2.0",
     "classnames": "^2.2.5",
     "eslint": "^4.0.0",
