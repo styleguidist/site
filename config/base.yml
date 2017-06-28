@@ -37,6 +37,9 @@ docs:
         caption: Locating components
         href: /docs/components.html
       -
+        caption: Working with third-parties
+        href: /docs/thirdparties.html
+      -
         caption: Configuring webpack
         href: /docs/webpack.html
       -
