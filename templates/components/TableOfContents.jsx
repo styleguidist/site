@@ -4,7 +4,7 @@ import s from './TableOfContents.pcss';
 
 export default function TableOfContents({ currentUrl, docs }) {
 	return (
-		<ul>
+		<ul class={s.tableOfContents}>
 			{docs.map(({ caption, pages }) =>
 				<li class={s.section}>
 					<Epsilon>{caption}</Epsilon>
