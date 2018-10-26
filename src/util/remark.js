@@ -57,7 +57,11 @@ export function note() {
 		visit(ast, 'blockquote', node => {
 			node.children.forEach(child => {
 				const strong = child && child.children && child.children[0];
-				const type = strong && strong.children && strong.children[0] && strong.children[0].value;
+				const type =
+					strong &&
+					strong.children &&
+					strong.children[0] &&
+					strong.children[0].value;
 				if (type === 'Note:' || type === 'Warning:') {
 					node.type = 'div'; // blockquote → div
 					child.children.shift(); // Remove **Note:**

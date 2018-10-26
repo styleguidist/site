@@ -23,10 +23,10 @@ npm start
 
 ## Author
 
-* [Artem Sapegin](http://sapegin.me)
+- [Artem Sapegin](http://sapegin.me)
 
 ---
 
 ## License
 
-You can use the code (HTML/JS) of this site, but you *can’t* use the design, CSS, images and content.
+You can use the code (HTML/JS) of this site, but you _can’t_ use the design, CSS, images and content.

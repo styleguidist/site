@@ -13,3 +13,4 @@ Thumbs.db
 /react-styleguidist-master
 /docs
 .eslintcache
+yarn.lock

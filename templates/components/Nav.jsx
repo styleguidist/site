@@ -7,11 +7,11 @@ export default function Header({ items }) {
 		<nav>
 			<SearchBox />
 			<ul class={s.list}>
-				{items.map(({ caption, href }) =>
+				{items.map(({ caption, href }) => (
 					<li class={s.item}>
 						<HeaderButton href={href}>{caption}</HeaderButton>
 					</li>
-				)}
+				))}
 			</ul>
 		</nav>
 	);

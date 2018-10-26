@@ -5,16 +5,22 @@ import TableOfContents from './components/TableOfContents';
 import PageFooter from './components/PageFooter';
 import Base from './Base';
 
-export default function({ title, content, url, fileName, option, typo, typoTitle }) {
+export default function({
+	title,
+	content,
+	url,
+	fileName,
+	option,
+	typo,
+	typoTitle,
+}) {
 	return (
 		<Base>
 			<Block bottom={2}>
 				<Alpha>{typoTitle(title)}</Alpha>
 				<Layout spacious>
 					<Layout spacious md={3 / 4} class="text">
-						<Block bottom={6}>
-							{typo(content)}
-						</Block>
+						<Block bottom={6}>{typo(content)}</Block>
 						<PageFooter fileName={fileName} />
 					</Layout>
 					<Layout spacious md={1 / 4}>

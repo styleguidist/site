@@ -1,5 +1,5 @@
 {
-  "extends": "stylelint-config-standard",
+  "extends": "stylelint-config-recommended",
   "rules": {
     "indentation": "tab",
     "selector-pseudo-class-no-unknown": [

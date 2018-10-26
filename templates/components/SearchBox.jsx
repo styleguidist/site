@@ -13,7 +13,12 @@ export default function Search() {
 					/>
 				</svg>
 			</label>
-			<input type="search" id="searchbox" placeholder="Search docs" class={s.input} />
+			<input
+				type="search"
+				id="searchbox"
+				placeholder="Search docs"
+				class={s.input}
+			/>
 		</div>
 	);
 }
