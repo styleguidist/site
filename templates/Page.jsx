@@ -2,6 +2,7 @@ import { Alpha } from 'tamia/lib/components/Text';
 import Block from 'tamia/lib/components/Block';
 import Layout from 'tamia/lib/components/Layout';
 import TableOfContents from './components/TableOfContents';
+import Ads from './components/Ads';
 import PageFooter from './components/PageFooter';
 import Base from './Base';
 
@@ -24,7 +25,10 @@ export default function({
 						<PageFooter fileName={fileName} />
 					</Layout>
 					<Layout spacious md={1 / 4}>
-						<TableOfContents currentUrl={url} docs={option('docs')} />
+						<Block bottom={2}>
+							<TableOfContents currentUrl={url} docs={option('docs')} />
+						</Block>
+						<Ads />
 					</Layout>
 				</Layout>
 			</Block>
