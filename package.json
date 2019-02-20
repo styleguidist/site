@@ -36,7 +36,7 @@
     "babel-cli": "^6.24.1",
     "babel-eslint": "^7.2.3",
     "babel-register": "^6.24.1",
-    "chokidar-cli": "^1.2.0",
+    "chokidar-cli": "^1.2.2",
     "classnames": "^2.2.5",
     "eslint": "^5.8.0",
     "eslint-config-tamia": "^6.0.2",
@@ -47,7 +47,7 @@
     "lint-staged": "^7.3.0",
     "lodash": "^4.17.4",
     "prettier": "^1.14.3",
-    "stylelint": "^9.6.0",
+    "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
     "tamia-build": "^1.3.0",
     "unist-util-visit": "^1.1.3"
