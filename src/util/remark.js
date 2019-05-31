@@ -37,6 +37,16 @@ export function heading() {
 }
 
 /*
+ * Make anchor links consistent inside files.
+ */
+export function resetSluggerBetweenFiles() {
+	return ast =>
+		visit(ast, 'root', () => {
+			slugger.reset();
+		});
+}
+
+/*
  * Fix links: Configuration.md → docs/configuration
  */
 export function link() {
