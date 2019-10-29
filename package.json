@@ -45,7 +45,7 @@
     "github-slugger": "^1.1.3",
     "husky": "^1.1.2",
     "lint-staged": "^7.3.0",
-    "lodash": "^4.17.4",
+    "lodash": "^4.17.13",
     "prettier": "^1.14.3",
     "stylelint": "^9.10.1",
     "stylelint-config-recommended": "^2.1.0",
