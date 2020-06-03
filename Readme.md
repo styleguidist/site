@@ -1,4 +1,6 @@
-# [React Styleguidist site](http://react-styleguidist.js.org)
+
+
+# [Repository moved to github.com/styleguidist/react-styleguidist/tree/master/site](https://github.com/styleguidist/react-styleguidist/tree/master/site)
 
 Powered by [Tâmia](http://tamiadev.github.io/tamia/) and [Fledermaus](https://github.com/sapegin/fledermaus).
 
